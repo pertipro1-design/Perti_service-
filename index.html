@@ -1,66 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perti Service</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body { font-family: Arial, sans-serif; }
-        header { display: flex; justify-content: space-between; padding: 20px; background: #333; color: white; }
-        nav { display: flex; gap: 15px; }
-        nav a { color: white; text-decoration: none; }
-        nav a:hover { text-decoration: underline; }
-        .login-button { background: #4CAF50; padding: 10px; border: none; color: white; cursor: pointer; }
-        .login-button:hover { background: #45a049; }
-    </style>
 </head>
 <body>
-    <header>
-        <h1>Perti Service</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            <a href="/login">Login</a>
-            <button class="login-button">Login</button>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Welcome to Perti Service</h2>
-            <p>Improved responsive design for mobile users.</p>
-            <form onsubmit="return validateForm()">
-                <label for="email">Email:</label>
-                <input type="email" id="email" required>
-                <label for="password">Password:</label>
-                <input type="password" id="password" required>
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Perti Service. All rights reserved.</p>
-    </footer>
-    <script>
-        function validateForm() {
-            // Basic form validation logic
-            var email = document.getElementById('email').value;
-            var password = document.getElementById('password').value;
-            if (!email || !password) {
-                alert('Please fill in all fields.');
-                return false;
-            }
-            return true;
-        }
-
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-    </script>
+    <h1>Welcome to Perti Service</h1>
+    <p>We provide the best service for our customers.</p>
 </body>
 </html>
